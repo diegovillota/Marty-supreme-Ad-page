@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DREAM BIG</title>
+    <link rel="icon" type="image/png" sizes="any" href="img/mvlogo.png">
+    <link rel="shortcut icon" href="img/mvlogo.png">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+    <nav class="site-nav">
+        <div class="nav-inner">
+            <span class="nav-brand">DREAM BIG</span>
+            <ul class="nav-links">
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#trailer">Trailer</a></li>
+                <li><a href="#synopsis">Synopsis</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="page-shell">
+
+        <header id="Home" class="hero-section">
+            <div class="hero-copy">
+                <span class="eyebrow">Dream Big</span>
+                <div class="hero-title">
+                    <img src="img/mvlogo.png" alt="Logo de Marty Supreme" />
+                </div>
+                <p>Marty Mauser, un joven con un sueño que nadie respeta, va hasta el infierno y regresa en busca de la grandeza.</p>
+                <div class="hero-actions">
+                    <a href="#synopsis" class="btn btn-primary"><strong>Más detalles</strong></a>
+                    <a href="#trailer" class="btn btn-secondary"><strong>Ver Trailer</strong></a>
+                </div>
+            </div>
+        </header>
+
+        <main>
+
+            <section id="trailer" class="panel panel-alt" aria-label="Trailer oficial">
+                <div class="panel-media">
+                    <div class="video-card">
+                        <iframe src="https://www.youtube.com/embed/s9gSuKaKcqM?rel=0&controls=1"
+                            title="Trailer of Marty Supreme"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                        <div class="video-overlay"></div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="synopsis" class="synopsis-section" aria-label="Synopsis">
+                <div class="synopsis-inner">
+                    <div class="synopsis-img">
+                        <img src="img/stock.jpg" alt="background" />
+                    </div>
+                    <div class="synopsis-copy">
+                        <h2>Synopsis</h2>
+                        <p>
+                            <em>Marty Supreme</em> Ambientada en el vibrante mundo del tenis de mesa de los años 50, Marty Supreme sigue a Marty Mauser (Timothée Chalamet), un joven soñador decidido a ganarse el respeto en un deporte que nadie toma en serio. Inspirada en el espíritu del legendario jugador de ping-pong, se narra el descenso de Marty hacia la obsesión, las apuestas y la redención, mientras arriesga todo para transformar su improbable pasión engrandeza.
+                        </p>
+                        <p>
+                            Con la actuación magistral de Timothée Chalamet y una banda sonora que te mantiene
+                            al borde del asiento, <em>Marty Supreme</em> es una experiencia cinematográfica que no
+                            te puedes perder.
+                        </p>
+                        <div class="tags">
+                            <span class="tag">Acción</span>
+                            <span class="tag">Drama</span>
+                            <span class="tag">2025</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contacto" class="contact-section" aria-label="Formulario de contacto">
+                <div class="contact-inner">
+                    <h2>¿Qué te pareció?</h2>
+                    <p class="contact-sub">Deja tu opinión sobre la película</p>
+                    <form class="contact-form" onsubmit="handleSubmit(event)">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="nombre">Nombre</label>
+                                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required />
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" placeholder="tu@email.com" required />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="calificacion">Calificación</label>
+                            <select id="calificacion" name="calificacion">
+                                <option value="">Selecciona una opción</option>
+                                <option value="5">Excelente</option>
+                                <option value="4">Muy buena</option>
+                                <option value="3">Regular</option>
+                                <option value="2">Mala</option>
+                                <option value="1">Muy mala</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="mensaje">Tu opinión</label>
+                            <textarea id="mensaje" name="mensaje" rows="4" placeholder="Cuéntanos qué pensaste de la película"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar opinión</button>
+                    </form>
+                    <p id="form-success" class="form-success" style="display:none;">¡Gracias por tu opinión!</p>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <footer id="info-footer" class="site-footer">
+        <div class="footer-info">
+            <p><strong>Directed by</strong> Josh Safdie</p>
+            <p><strong>Crew</strong> Timothée Chalamet · Odessa A'zion · Gwyneth Paltrow</p>
+            <p><strong>Genre</strong> Acción · Drama</p>
+            <p><strong>Year</strong> 2025</p>
+        </div>
+        <p class="footer-copy">&copy; 2025 Central Pictures. All rights reserved.</p>
+    </footer>
+
+    <script src="js/animations.js"></script>
+    <script>
+        function handleSubmit(e) {
+            e.preventDefault();
+            e.target.reset();
+            e.target.style.display = 'none';
+            document.getElementById('form-success').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
