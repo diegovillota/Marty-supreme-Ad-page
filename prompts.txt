@@ -1,0 +1,6 @@
+Prompt 1:
+Crear una seccion de elenco llamda "castData" (esta seccion es un arreglo donde se utiliza la constante de el mismo nombre)
+con ese prompt tambien agregó la variable let para determinar actor favorito y busqueda 
+tambien se agregó la constante de castfiltrado para ver y buscar actores favoritos donde se ocupa if 
+ademas en la misma seccion de actores favoritos se usa while para determinar la cantidad de actores favoritos
+cada actor es un objeto dentro de castdata con su respectiva informacion e imagen
